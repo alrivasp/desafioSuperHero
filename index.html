@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Super Hero</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/ico" />
+</head>
+
+<body>
+    <nav class="navigation navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="https://alrivasp.github.io/">
+            <img class="navigation__logo" src="assets/img/sh2.jpg" alt="Logo_super hero">
+            <span class="navigation__title">SuperHero</span>
+        </a>
+    </nav>
+    <main class="main">
+        <div class="container text-center main__imageContainer">
+            <img src="assets/img/sh1.jpg" alt="imagen principal super hero" class="main__imagePrincipal">
+        </div>
+        <div class="container main__formContainer">
+            <h3 class="main__title">Encuentra tu SuperHero</h3>
+            <form class="main__form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Ingrese el numero del SuperHero a buscar</label>
+                  <input type="number" id="id-hero" class="form-control" placeholder="El ID de tu super Heroe">
+                  <div id="idHeroHelp" class="form-text"></div>
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary w-100">Buscar</button>
+              </form>
+        </div>
+    </main>
+    <article id="container-card-hero" class="container-card-hero p-5" >
+        <div id="card-hero" class="card text-center shadow">
+            <div class="card-header">
+              <span class="container-card-hero__title" id="title-article"></span>
+            </div>
+            <div class="card-body">
+                <div class="row justify-content-around">
+                    <div class="col-2">
+                        <img id="image-super-hero" alt="foto del super heroe buscado">
+                    </div>
+                    <div class="col-3 text-start">
+                        <span><b>NOMBRE: </b><i id="nameCard"></i></span><br>
+                        <hr>
+                        <span><b>CONEXIONES: </b><i id="conectionsCard"></i></span><br>
+                        <hr>
+                        <span><b>PUBLICADO POR: </b><i id="publishedCard"></i></span><br>
+                        <hr>
+                        <span><b>OCUPACION: </b><i id="ocupationCard"></i></span><br>
+                        <hr>
+                        <span><b>PRIMERA APARICION: </b><i id="firstAparitionCard"></i></span><br>
+                        <hr>
+                        <span><b>ALTURA: </b><i id="higthCard"></i></span><br>
+                        <hr>
+                        <span><b>PESO: </b><i id="weithCard"></i></span><br>
+                        <hr>
+                        <span><b>ALIAS: </b><i id="alianceCard"></i></span>
+                    </div>
+                    <div class="col-6">
+                        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+              SUPER HERO ENCONTRADO
+            </div>
+          </div>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>

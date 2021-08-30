@@ -1,0 +1,23 @@
+.main{
+    
+    &__imageContainer{
+        padding: 2rem;
+    }
+
+    &__imagePrincipal{
+        width: 40%;
+        height: auto;
+    }
+
+    &__formContainer{
+        padding-left: 20%;
+    }
+
+    &__title{
+        font-weight: $bold;
+    }
+
+    &__form{
+        width: 60%;
+    }
+}

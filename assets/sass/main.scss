@@ -1,0 +1,22 @@
+// abstracts
+@import 'abstracts/variables';
+
+// Vendors
+@import 'vendors/bootstrap_v.5.0.2/bootstrap.scss';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+// Layout
+
+
+// Components
+@import 'components/navigation';
+@import 'components/main_web';
+@import 'components/article';
+
+// Pages
+
+// Theme
